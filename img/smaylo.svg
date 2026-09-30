@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Smaylo sariyog'i">
+  <ellipse cx="120" cy="182" rx="95" ry="10" fill="#13294b" opacity=".12"/>
+  <!-- qadoq -->
+  <path d="M30 70 L120 40 L210 70 L210 160 L120 190 L30 160 Z" fill="#f6c343"/>
+  <path d="M30 70 L120 100 L120 190 L30 160 Z" fill="#fbd66d"/>
+  <path d="M120 100 L210 70 L210 160 L120 190 Z" fill="#e8ae22"/>
+  <path d="M30 70 L120 40 L210 70 L120 100 Z" fill="#ffe59a"/>
+  <!-- yorliq -->
+  <path d="M45 105 L108 126 L108 160 L45 139 Z" fill="#fff" opacity=".95"/>
+  <text x="76" y="140" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="800" fill="#13294b" text-anchor="middle" transform="skewY(18) translate(0 -24)">Smaylo</text>
+  <!-- tabassum -->
+  <circle cx="165" cy="118" r="22" fill="#fff" opacity=".9"/>
+  <circle cx="158" cy="113" r="2.6" fill="#13294b"/>
+  <circle cx="172" cy="113" r="2.6" fill="#13294b"/>
+  <path d="M155 122 Q165 132 175 122" stroke="#13294b" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- yog' bo'lagi -->
+  <path d="M88 52 l30 -10 l26 9 l-30 10 z" fill="#fff4cf"/>
+</svg>

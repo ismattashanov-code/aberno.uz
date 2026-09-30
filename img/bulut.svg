@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Bulut salfetkalari">
+  <ellipse cx="120" cy="182" rx="98" ry="10" fill="#13294b" opacity=".12"/>
+  <!-- quti -->
+  <path d="M26 80 L120 56 L214 80 L214 158 L120 184 L26 158 Z" fill="#4aa3df"/>
+  <path d="M26 80 L120 104 L120 184 L26 158 Z" fill="#6fb8ea"/>
+  <path d="M120 104 L214 80 L214 158 L120 184 Z" fill="#2f8cc9"/>
+  <path d="M26 80 L120 56 L214 80 L120 104 Z" fill="#a8d6f5"/>
+  <!-- teshik va salfetka -->
+  <path d="M84 80 Q120 68 156 80 Q120 92 84 80 Z" fill="#2479b5"/>
+  <path d="M100 80 Q104 44 122 36 Q140 46 140 80 Q120 86 100 80 Z" fill="#fff"/>
+  <path d="M122 36 Q128 56 124 78" stroke="#dbeaf6" stroke-width="2" fill="none"/>
+  <!-- bulut belgisi -->
+  <g transform="translate(40 118) skewY(14)">
+    <path d="M14 26 a10 10 0 0 1 2 -19 a14 14 0 0 1 26 -2 a10 10 0 0 1 8 21 z" fill="#fff"/>
+  </g>
+  <text x="170" y="142" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="800" fill="#fff" text-anchor="middle" transform="skewY(-14) translate(0 42)">Bulut</text>
+</svg>

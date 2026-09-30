@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahsulotlar — Aberno</title>
+  <meta name="description" content="Aberno mahsulotlari: Smaylo sariyog'i, Margaritto margarini va Bulut quruq salfetkalari.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Aberno bosh sahifa">
+        <span class="logo__mark">A</span>Aberno<span class="dot">.</span>
+      </a>
+      <nav class="nav" aria-label="Asosiy menyu">
+        <a href="index.html" class="nav__link">Bosh sahifa</a>
+        <a href="about.html" class="nav__link">Biz haqimizda</a>
+        <a href="products.html" class="nav__link" data-page="products">Mahsulotlar</a>
+        <a href="career.html" class="nav__link">Karyera</a>
+        <a href="contact.html" class="nav__link">Aloqa</a>
+        <a href="contact.html" class="btn btn--butter">Hamkor bo'lish</a>
+      </nav>
+      <button class="burger" aria-label="Menyuni ochish" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Bosh sahifa</a> / Mahsulotlar</div>
+        <h1>Mahsulotlarimiz</h1>
+        <p>Smaylo sariyog'i, Margaritto margarini va Bulut quruq salfetkalari — har kuni ishonch bilan foydalanish uchun.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Brend bo'yicha filtr">
+          <button class="filter is-active" data-filter="all">Barchasi</button>
+          <button class="filter" data-filter="smaylo">Smaylo</button>
+          <button class="filter" data-filter="margaritto">Margaritto</button>
+          <button class="filter" data-filter="bulut">Bulut</button>
+        </div>
+
+        <div class="products">
+          <!-- Smaylo -->
+          <article class="product theme-smaylo" data-brand="smaylo">
+            <div class="product__img"><img src="img/smaylo.svg" alt="Smaylo sariyog'i 200 g"></div>
+            <div class="product__body">
+              <span class="product__brand">Smaylo</span>
+              <h3>Sariyog' 82,5%</h3>
+              <p>Klassik yuqori yog'lilikdagi sariyog'. Nonushta va qandolatchilik uchun.</p>
+              <div class="product__meta"><span class="chip">200 g</span><span class="chip">500 g</span></div>
+            </div>
+          </article>
+          <article class="product theme-smaylo" data-brand="smaylo">
+            <div class="product__img"><img src="img/smaylo.svg" alt="Smaylo sariyog'i 72,5%"></div>
+            <div class="product__body">
+              <span class="product__brand">Smaylo</span>
+              <h3>Sariyog' 72,5%</h3>
+              <p>Kundalik foydalanish uchun yumshoq ta'mli dehqoncha sariyog'.</p>
+              <div class="product__meta"><span class="chip">180 g</span><span class="chip">400 g</span></div>
+            </div>
+          </article>
+          <article class="product theme-smaylo" data-brand="smaylo">
+            <div class="product__img"><img src="img/smaylo.svg" alt="Smaylo sariyog'i ulgurji qadoq"></div>
+            <div class="product__body">
+              <span class="product__brand">Smaylo</span>
+              <h3>Sariyog' — HoReCa qadoq</h3>
+              <p>Restoran, kafe va nonvoyxonalar uchun katta hajmdagi qadoq.</p>
+              <div class="product__meta"><span class="chip">5 kg</span><span class="chip">20 kg</span></div>
+            </div>
+          </article>
+
+          <!-- Margaritto -->
+          <article class="product theme-margaritto" data-brand="margaritto">
+            <div class="product__img"><img src="img/margaritto.svg" alt="Margaritto stol margarini"></div>
+            <div class="product__body">
+              <span class="product__brand">Margaritto</span>
+              <h3>Stol margarini</h3>
+              <p>Buterbrod va nonushta uchun yumshoq, oson suriladigan margarin.</p>
+              <div class="product__meta"><span class="chip">250 g</span><span class="chip">450 g</span></div>
+            </div>
+          </article>
+          <article class="product theme-margaritto" data-brand="margaritto">
+            <div class="product__img"><img src="img/margaritto.svg" alt="Margaritto pishiriqlar uchun margarin"></div>
+            <div class="product__body">
+              <span class="product__brand">Margaritto</span>
+              <h3>Pishiriqlar uchun margarin</h3>
+              <p>Xamir, pirog va pechenyelar uchun maxsus tarkibli margarin.</p>
+              <div class="product__meta"><span class="chip">250 g</span><span class="chip">500 g</span></div>
+            </div>
+          </article>
+          <article class="product theme-margaritto" data-brand="margaritto">
+            <div class="product__img"><img src="img/margaritto.svg" alt="Margaritto qandolatchilik margarini"></div>
+            <div class="product__body">
+              <span class="product__brand">Margaritto</span>
+              <h3>Qandolatchilik margarini</h3>
+              <p>Sanoat nonvoyxonalari va qandolat sexlari uchun ulgurji qadoq.</p>
+              <div class="product__meta"><span class="chip">10 kg</span><span class="chip">20 kg</span></div>
+            </div>
+          </article>
+
+          <!-- Bulut -->
+          <article class="product theme-bulut" data-brand="bulut">
+            <div class="product__img"><img src="img/bulut.svg" alt="Bulut stol salfetkalari"></div>
+            <div class="product__body">
+              <span class="product__brand">Bulut</span>
+              <h3>Stol salfetkalari</h3>
+              <p>Bir qavatli, yumshoq va mustahkam oq salfetkalar — dasturxon uchun.</p>
+              <div class="product__meta"><span class="chip">100 dona</span><span class="chip">1 qavat</span></div>
+            </div>
+          </article>
+          <article class="product theme-bulut" data-brand="bulut">
+            <div class="product__img"><img src="img/bulut.svg" alt="Bulut qutidagi salfetkalar"></div>
+            <div class="product__body">
+              <span class="product__brand">Bulut</span>
+              <h3>Qutidagi salfetkalar</h3>
+              <p>Ikki qavatli, yuz va qo'l uchun yumshoq salfetkalar qutida.</p>
+              <div class="product__meta"><span class="chip">150 dona</span><span class="chip">2 qavat</span></div>
+            </div>
+          </article>
+          <article class="product theme-bulut" data-brand="bulut">
+            <div class="product__img"><img src="img/bulut.svg" alt="Bulut cho'ntak salfetkalari"></div>
+            <div class="product__body">
+              <span class="product__brand">Bulut</span>
+              <h3>Cho'ntak salfetkalari</h3>
+              <p>Sumka va cho'ntak uchun ixcham qadoq — doim yoningizda.</p>
+              <div class="product__meta"><span class="chip">10 dona</span><span class="chip">3 qavat</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Brendlar</span>
+          <h2>Har bir brend haqida batafsil</h2>
+        </div>
+        <div class="brand-nav">
+          <a href="smaylo.html" class="theme-smaylo">Smaylo — sariyog' <span>→</span></a>
+          <a href="margaritto.html" class="theme-margaritto">Margaritto — margarin <span>→</span></a>
+          <a href="bulut.html" class="theme-bulut">Bulut — salfetkalar <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>Ulgurji buyurtma berish</h2>
+            <p>Narxlar, minimal buyurtma hajmi va yetkazib berish shartlari bo'yicha savdo bo'limimizga murojaat qiling.</p>
+          </div>
+          <a href="contact.html" class="btn btn--butter">So'rov yuborish →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno<span class="dot">.</span></a>
+          <p>Sariyog', margarin va quruq salfetkalar ishlab chiqaruvchi O'zbekiston kompaniyasi.</p>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="products.html">Mahsulotlar</a></li>
+            <li><a href="career.html">Karyera</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Brendlar</h4>
+          <ul>
+            <li><a href="smaylo.html">Smaylo</a></li>
+            <li><a href="margaritto.html">Margaritto</a></li>
+            <li><a href="bulut.html">Bulut</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aloqa</h4>
+          <ul>
+            <li><a href="tel:+998710000000">+998 71 000 00 00</a></li>
+            <li><a href="mailto:info@aberno.uz">info@aberno.uz</a></li>
+            <li>Toshkent, O'zbekiston</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Aberno. Barcha huquqlar himoyalangan.</span>
+        <span>aberno.uz</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Yuqoriga qaytish">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
