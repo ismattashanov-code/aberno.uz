@@ -3,6 +3,7 @@
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
+  initTheme();
   initHeader();
   initMobileMenu();
   initActiveLink();
@@ -14,6 +15,39 @@ document.addEventListener("DOMContentLoaded", () => {
   initContactForm();
   setYear();
 });
+
+/* Yorug' / qorong'u mavzu almashtirgich */
+function initTheme() {
+  const root = document.documentElement;
+  const btn = document.querySelector(".theme-toggle");
+  const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+  const getSaved = () => {
+    try { return localStorage.getItem("theme"); } catch (e) { return null; }
+  };
+
+  const apply = (theme) => {
+    root.setAttribute("data-theme", theme);
+    if (btn) {
+      const label = theme === "dark" ? "Yorug' mavzuga o'tish" : "Qorong'u mavzuga o'tish";
+      btn.setAttribute("aria-label", label);
+      btn.setAttribute("title", label);
+    }
+  };
+
+  apply(root.getAttribute("data-theme") || (media.matches ? "dark" : "light"));
+
+  btn?.addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    apply(next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+  // Foydalanuvchi o'zi tanlamagan bo'lsa, tizim mavzusiga ergashish
+  media.addEventListener?.("change", (e) => {
+    if (!getSaved()) apply(e.matches ? "dark" : "light");
+  });
+}
 
 /* Scroll bo'lganda header soyasi */
 function initHeader() {

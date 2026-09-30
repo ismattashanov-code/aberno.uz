@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Sahifa chizilishidan oldin mavzuni qo'llash (oq miltillashning oldini oladi)
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
   <title>Aberno — Sariyog', margarin va salfetkalar ishlab chiqaruvchi</title>
   <meta name="description" content="Aberno — Smaylo sariyog'i, Margaritto margarini va Bulut quruq salfetkalarini ishlab chiqaruvchi O'zbekiston kompaniyasi.">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -27,7 +37,13 @@
         <a href="contact.html" class="nav__link">Aloqa</a>
         <a href="contact.html" class="btn btn--butter">Hamkor bo'lish</a>
       </nav>
-      <button class="burger" aria-label="Menyuni ochish" aria-expanded="false"><span></span></button>
+      <div class="header__tools">
+        <button class="theme-toggle" type="button" aria-label="Qorong'u mavzuga o'tish" title="Mavzuni almashtirish">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <button class="burger" aria-label="Menyuni ochish" aria-expanded="false"><span></span></button>
+      </div>
     </div>
   </header>
 
